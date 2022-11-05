@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Mahasiswa</title>
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="input">
+    <!-- Header -->
+    <section id="header">
+        <div class="trans-bg"></div>
+        <div id="brand">
+            <a href="">
+                <img src="Asset/Umsida.png" alt=" Logo Umsida">
+            </a>
+            <h1>Absensi Ikut Kelas Lain</h1>
+        </div>
+        <div class="container" id="navbar">
+            <!-- Menus -->
+            <div class="layout-50" id="menus">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            Daftar Absensi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./input.html" id="active">
+                            Input Absensi
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Breadcumb -->
+            <div class="layout-50" id="breadcumb">
+                <p>Input Absensi Mahasiswa</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <!-- Content -->
+    <section id="content">
+        <div class="container">
+            <div id="form-matkul">
+                
+                <form>
+                    <!-- FORM MATA KULIAH MAHASISWA -->
+                    <div class="form-input">
+                        <h3>
+                            Form Mata Kuliah Mahasiswa
+                        </h3>
+
+                        <!-- NIM (nim) -->
+                        <div class="input-label">
+                            <label for="nim">NIM</label>
+                            <input type="number" name="nim" id="nim" placeholder="NIM (Ex: 123456543210)">
+                        </div>
+
+                        <!-- NAMA (nama-mhs) -->
+                        <div class="input-label">
+                            <label for="nama-mhs">Nama Mahasiswa</label>
+                            <input type="text" name="nama-mhs" id="nama-mhs" placeholder="Nama Mahasiswa">
+                        </div>
+
+                        <!-- Mata Kuliah (matkul) -->
+                        <div class="input-label">
+                            <label for="matkul">Mata Kuliah</label>
+                            <select name="matkul" id="matkul">
+                                <option disabled selected value="0">-- Pilih Mata Kuliah --</option>
+                                <option value="Pemrograman Berbasis Web">Pemrograman Berbasis Web</option>
+                                <option value="Sistem Operasi">Sistem Operasi</option>
+                                <option value="Kemuhammadiyahan">Kemuhammadiyahan</option>
+                                <option value="Technopreneur">Technopreneur</option>
+                                <option value="Kewarganegaraan">Kewarganegaraan</option>
+                                <option value="Akuntansi">Akuntansi</option>
+                                <option value="Aljabar Linear">Aljabar Linear</option>
+                                <option value="Teori Bahasa dan Automata">Teori Bahasa dan Automata</option>
+                            </select>
+                        </div>
+
+                        <!-- Dosen Pengampu (dospengampu) -->
+                        <div class="input-label">
+                            <label for="dospengampu">Nama Dosen Pengampu/Kelas</label>
+                            <select name="dospengampu" id="dospengampu">
+                                <option disabled selected value="0">-- Pilih Dosen Pengampu --</option>
+                                <option value="Ika Ratna Indra Astuti S.Kom., M.kom. / A2">Ika Ratna Indra Astuti S.Kom., M.kom. / A2</option>
+                                <option value="Uce Indahyanti, S.Kom. M.Kom / A3">Uce Indahyanti, S.Kom. M.Kom / A3</option>
+                            </select>
+                        </div>
+
+                        <!-- Dosen Pengganti (dospengganti) -->
+                        <div class="input-label">
+                            <label for="dospengganti">Nama Dosen Pengganti/Kelas</label>
+                            <select name="dospengganti" id="dospengganti">
+                                <option disabled selected value="0">-- Pilih Dosen Pengganti --</option>
+                                <option value="Ika Ratna Indra Astuti S.Kom., M.kom. / A2">Ika Ratna Indra Astuti S.Kom., M.kom. / A2</option>
+                                <option value="Uce Indahyanti, S.Kom. M.Kom / A3">Uce Indahyanti, S.Kom. M.Kom / A3</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- FORM ABSENSI -->
+                    <div class="form-input">
+                        <h3>
+                            Form Absensi
+                        </h3>
+
+                        <!-- Tanggal Absensi (tgl-absensi) -->
+                        <div class="input-label">
+                            <label for="tgl-absesni">Tanggal Absensi</label>
+                            <input type="date" name="tgl-absensi" id="tgl-absensi">
+                        </div>
+
+                        <!-- Materi Kuliah (materi-kuliah) -->
+                        <div class="input-label">
+                            <label for="materi-kuliah">Materi Kuliah</label>
+                            <select name="materi-kuliah" id="materi-kuliah">
+                                <option disabled selected value="0">-- Pilih Materi Kuliah --</option>
+                                <option value="HTML Dasar">Materi 1 - HTML Dasar</option>
+                                <option value="HTML Lanjutan">Materi 2 - HTML Lanjutan</option>
+                                <option value="CSS Dasar">Materi 3 - CSS Dasar</option>
+                                <option value="Bootstrap Framework">Materi 4 - Bootstrap Framework</option>
+                                <option value="Javascript Dasar">Materi 5 - Javascript Dasar</option>
+                                <option value="JQuery Library">Materi 6 - JQuery Library</option>
+                                <option value="PHP Dasar">Materi 7 - PHP Dasar</option>
+                                <option value="PHP Lanjutan">Materi 8 - PHP Lanjutan</option>
+                                <option value="Laravel Framework">Materi 9 - Laravel Framework</option>
+                            </select>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="btn">
+                            <button type="button" id="add-btn" onclick="inputData()">Simpan</button>
+                            <button type="button" id="clear-btn" onclick="clearStorage()">Hapus Data</button>
+                            <button type="reset" id="reset-btn">Reset</button>
+                            <a href="./index.html">Kembali</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

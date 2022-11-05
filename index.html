@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Mahasiswa</title>
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="home">
+    <!-- Header -->
+    <section id="header">
+        <div class="trans-bg"></div>
+        <div id="brand">
+            <a href="">
+                <img src="Asset/Umsida.png" alt=" Logo Umsida">
+            </a>
+            <h1>Absensi Ikut Kelas Lain</h1>
+        </div>
+        <div class="container" id="navbar">
+            <!-- Menus -->
+            <div class="layout-50" id="menus">
+                <ul>
+                    <li>
+                        <a href="./" id="active">
+                            Daftar Absensi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./input.html">
+                            Input Absensi
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Breadcumb -->
+            <div class="layout-50" id="breadcumb">
+                <p>Daftar Absensi Mahasiswa</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <!-- Content -->
+    <section id="content">
+        <!-- Biodata Mahasiswa -->
+        <div class="container">
+            <!-- Biodata -->
+            <div class="layout layout-80" id="bio-mhs">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td id="nama-mhs"></td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td id="nim-mhs"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Dosen Pengampu / Kelas</td>
+                        <td>:</td>
+                        <td id="dosen-pengampu"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Dosen Pengganti / Kelas</td>
+                        <td>:</td>
+                        <td id="dosen-pengganti"></td>
+                    </tr>
+                    <tr>
+                        <td>Mata Kuliah</td>
+                        <td>:</td>
+                        <td  id="matkul-mhs"></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Profile Foto -->
+            <div class="layout layout-20" id="bio-photo">
+                <img src="Asset/user.png" alt="">
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="container">
+            <!-- Table Data -->
+            <div id="absensi-mhs">
+                <img src="/Asset/UMSIDALOGO.png" alt="" id="bg-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Hari/Tanggal</th>
+                            <th>Materi Kuliah</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="tglAbsen-mhs"></td>
+                            <td id="materi-mhs"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- TTD Dosen -->
+            <div id="ttd-dosen">
+                <div class="ttd" id="dosp1">
+                    <div>Mengetahui,</div>
+                    <div>Dosen Pengampu induk</div>
+                    <div>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</div>
+                </div>
+                <div class="ttd" id="dosp2">
+                    <div>&nbsp;</div>
+                    <div>
+                        Dosen Pengganti
+                    </div>
+                    <div>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
